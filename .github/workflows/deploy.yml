@@ -44,3 +44,4 @@ jobs:
               -e BACKEND_URL=${{ secrets.BACKEND_URL }} \
               --restart always \
               ${{ secrets.DOCKERHUB_USERNAME }}/front:latest           
+              
