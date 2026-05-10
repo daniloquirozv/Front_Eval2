@@ -41,5 +41,6 @@ jobs:
             docker run -d \
               --name front \
               -p 80:5000 \
+              -e BACKEND_URL=${{ secrets.BACKEND_URL }} \
               --restart always \
               ${{ secrets.DOCKERHUB_USERNAME }}/front:latest
